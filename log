@@ -57,3 +57,17 @@ Fri 17 Mar 2023 02:23:42 AM UTC:
  tests:  1|6
 total_score: 10/70
 ce14023
+Fri 17 Mar 2023 02:23:57 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:34:11: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   33 |         else (a[i] < *min)
+      |              ~~~~~~~~~~~~~
+      |                    |
+      |                    int
+   34 |           *min = a[i];
+      |           ^
+Compilation failed
+effe89d
