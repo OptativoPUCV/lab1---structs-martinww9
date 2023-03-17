@@ -135,3 +135,19 @@ Fri 17 Mar 2023 02:30:41 AM UTC:
  tests:  2|5
 total_score: 20/70
 ee556f2
+Fri 17 Mar 2023 02:35:54 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:17: error: format ‘%d’ expects argument of type ‘int *’, but argument 4 has type ‘int’ [-Werror=format=]
+   58 |   scanf("%c %c %d", nombre, rut, edad);
+      |                ~^                ~~~~
+      |                 |                |
+      |                 int *            int
+exercises.c:58:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   58 |   scanf("%c %c %d", nombre, rut, edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+44b937c
