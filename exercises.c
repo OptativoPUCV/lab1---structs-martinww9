@@ -81,7 +81,7 @@ Vector * crearVector(int n) {
   if (nuevoVector == NULL) return 0;
     nuevoVector->datos = calloc(n, sizeof(int));
     nuevoVector->capacidad = n;
-    return NULL;
+    return nuevoVector;
 }
 
 /*
