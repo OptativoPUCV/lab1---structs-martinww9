@@ -521,3 +521,14 @@ Fri 17 Mar 2023 03:29:12 AM UTC:
  tests:  7|1
 total_score: 60/70
 e15d1fc
+Fri 17 Mar 2023 03:33:53 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:123:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  123 |      if(i=0)
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+c0795b5
