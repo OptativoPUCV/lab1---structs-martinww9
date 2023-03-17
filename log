@@ -167,3 +167,13 @@ exercises.c:58:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 decf68d
+Fri 17 Mar 2023 02:36:52 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:34: error: invalid type argument of unary ‘*’ (have ‘int’)
+   58 |   scanf("%c %c %i", nombre, rut, *edad);
+      |                                  ^~~~~
+Compilation failed
+e351fd6
