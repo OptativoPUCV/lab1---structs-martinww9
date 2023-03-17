@@ -335,3 +335,13 @@ Fri 17 Mar 2023 03:03:02 AM UTC:
  tests:  4|3
 total_score: 40/70
 7d054d8
+Fri 17 Mar 2023 03:03:46 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:93:9: error: invalid type argument of ‘->’ (have ‘Vector’)
+   93 |     v[i]->datos = valor;
+      |         ^~
+Compilation failed
+4de9ef6
