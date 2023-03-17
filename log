@@ -238,3 +238,21 @@ In file included from test.c:2:
       |              ^~~~~~
 Compilation failed
 63aefc8
+Fri 17 Mar 2023 02:50:21 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   81 |   if (nuevoVector = NULL) exit EXIT_SUCCESS;
+      |       ^~~~~~~~~~~
+exercises.c:81:27: error: statement with no effect [-Werror=unused-value]
+   81 |   if (nuevoVector = NULL) exit EXIT_SUCCESS;
+      |                           ^~~~
+exercises.c:81:31: error: expected ‘;’ before numeric constant
+   81 |   if (nuevoVector = NULL) exit EXIT_SUCCESS;
+      |                               ^
+      |                               ;
+cc1: all warnings being treated as errors
+Compilation failed
+53fbe49
