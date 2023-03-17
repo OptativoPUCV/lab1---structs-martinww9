@@ -188,3 +188,15 @@ exercises.c:58:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 9f2de18
+Fri 17 Mar 2023 02:38:48 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:14: error: ‘nuevaPersona’ undeclared (first use in this function); did you mean ‘crearPersona’?
+   58 |       strcpy(nuevaPersona->nombre, nombre);
+      |              ^~~~~~~~~~~~
+      |              crearPersona
+exercises.c:58:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+87f1f75
