@@ -8,3 +8,17 @@ Fri 17 Mar 2023 02:18:44 AM UTC:
  tests:  1|6
 total_score: 10/70
 4e278d1
+Fri 17 Mar 2023 02:22:04 AM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:12: error: expected ‘(’ before ‘*’ token
+   31 |         if *a[i] > *max
+      |            ^
+      |            (
+exercises.c:31:12: error: invalid type argument of unary ‘*’ (have ‘int’)
+   31 |         if *a[i] > *max
+      |            ^~~~~
+Compilation failed
+4705207
