@@ -22,3 +22,16 @@ exercises.c:31:12: error: invalid type argument of unary ‘*’ (have ‘int’
       |            ^~~~~
 Compilation failed
 4705207
+Fri 17 Mar 2023 02:22:17 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   31 |         if (*a[i] > *max)
+      |             ^~~~~
+exercises.c:32:18: error: invalid type argument of unary ‘*’ (have ‘int’)
+   32 |           *max = *a[i];
+      |                  ^~~~~
+Compilation failed
+db6e080
