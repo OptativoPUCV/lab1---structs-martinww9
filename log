@@ -410,3 +410,14 @@ exercises.c:93:16: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 a33a465
+Fri 17 Mar 2023 03:11:16 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:93:6: error: ‘v’ is a pointer; did you mean to use ‘->’?
+   93 |     v.datos = valor;
+      |      ^
+      |      ->
+Compilation failed
+e66780c
