@@ -224,3 +224,17 @@ Fri 17 Mar 2023 02:48:37 AM UTC:
  tests:  3|4
 total_score: 30/70
 b67f973
+Fri 17 Mar 2023 02:49:03 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:26: error: too many arguments to function ‘malloc’
+   81 |     nuevoVector->datos = malloc(n, sizeof(int));
+      |                          ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Compilation failed
+63aefc8
