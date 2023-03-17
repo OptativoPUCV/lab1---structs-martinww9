@@ -103,3 +103,17 @@ exercises.c:34:15: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 effb2f4
+Fri 17 Mar 2023 02:27:36 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:32:15: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   32 |           max = a[i];
+      |               ^
+exercises.c:34:15: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   34 |           min = a[i];
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+6f389d5
