@@ -26,7 +26,7 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
     *max = a[0];
-    *min = a[0];
+    *min = a[n];
   
     for (int i = 0; i < 10; i++)
       {
@@ -77,7 +77,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-    Vector* vector2 = malloc(sizeof(Vector));
+    Vector *vector2 = malloc(sizeof(Vector));
   if (vector2 == NULL) return 0;
     vector2->datos = calloc(n, sizeof(int));
     vector2->capacidad = n;
