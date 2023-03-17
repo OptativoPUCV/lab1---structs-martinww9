@@ -279,3 +279,14 @@ Fri 17 Mar 2023 02:51:18 AM UTC:
  tests:  4|3
 total_score: 40/70
 3a4c5ff
+Fri 17 Mar 2023 02:54:42 AM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:12: error: ‘vector2’ is a pointer; did you mean to use ‘->’?
+   83 |     vector2.capacidad = n;
+      |            ^
+      |            ->
+Compilation failed
+9923394
