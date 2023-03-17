@@ -256,3 +256,14 @@ exercises.c:81:31: error: expected ‘;’ before numeric constant
 cc1: all warnings being treated as errors
 Compilation failed
 53fbe49
+Fri 17 Mar 2023 02:50:42 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   81 |   if (nuevoVector = NULL) return 0;
+      |       ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+740a3e0
