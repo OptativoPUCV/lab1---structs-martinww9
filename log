@@ -450,3 +450,20 @@ Fri 17 Mar 2023 03:13:54 AM UTC:
  tests:  4|3
 total_score: 40/70
 7a8d26b
+Fri 17 Mar 2023 03:19:25 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+test.c: In function ‘asignarValor’:
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5cfc3ab
