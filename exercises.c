@@ -123,11 +123,11 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *vectorB = crearVector( 2);
   for(int i = 0; i < 2; i++)
     {
-      vectorA->datos[i] = asignarValor(*vectorA,  i,  a1);
-      vectorB->datos[i] = asignarValor(*vectorB,  i,  b1);
+      vectorA->datos[i] = asignarValor(vectorA,  i,  a1);
+      vectorB->datos[i] = asignarValor(vectorB,  i,  b1);
       if (i>0){
-        vectorA->datos[i] = asignarValor(*vectorA,  i,  a2);
-        vectorB->datos[i] = asignarValor(*vectorB,  i,  b2);
+        vectorA->datos[i] = asignarValor(vectorA,  i,  a2);
+        vectorB->datos[i] = asignarValor(vectorB,  i,  b2);
       }
     }
   
