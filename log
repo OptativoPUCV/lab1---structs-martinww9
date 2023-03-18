@@ -853,3 +853,22 @@ exercises.c:130:9: error: invalid type argument of unary ‘*’ (have ‘int’
       |         ^~~~~~~~~~~~~~~~~~
 Compilation failed
 f5d8f4e
+Sat 18 Mar 2023 06:41:09 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:126:25: error: void value not ignored as it ought to be
+  126 |       vectorA->datos[i] = asignarValor(vectorA, i, a1);
+      |                         ^
+exercises.c:127:25: error: void value not ignored as it ought to be
+  127 |       vectorB->datos[i] = asignarValor(vectorB, i, b1);
+      |                         ^
+exercises.c:129:27: error: void value not ignored as it ought to be
+  129 |         vectorA->datos[i] = asignarValor(vectorA, i, a2);
+      |                           ^
+exercises.c:130:27: error: void value not ignored as it ought to be
+  130 |         vectorB->datos[i] = asignarValor(vectorB, i, b2);
+      |                           ^
+Compilation failed
+06a2774
