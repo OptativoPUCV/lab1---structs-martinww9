@@ -776,3 +776,42 @@ exercises.c:92:6: note: declared here
       |      ^~~~~~~~~~~~
 Compilation failed
 d035e62
+Sat 18 Mar 2023 06:39:17 PM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:126:40: error: incompatible type for argument 1 of ‘asignarValor’
+  126 |       vectorA->datos[i] = asignarValor(*vectorA,  i,  a1);
+      |                                        ^~~~~~~~
+      |                                        |
+      |                                        Vector
+exercises.c:92:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:127:40: error: incompatible type for argument 1 of ‘asignarValor’
+  127 |       vectorB->datos[i] = asignarValor(*vectorB,  i,  b1);
+      |                                        ^~~~~~~~
+      |                                        |
+      |                                        Vector
+exercises.c:92:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:129:42: error: incompatible type for argument 1 of ‘asignarValor’
+  129 |         vectorA->datos[i] = asignarValor(*vectorA,  i,  a2);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          Vector
+exercises.c:92:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:130:42: error: incompatible type for argument 1 of ‘asignarValor’
+  130 |         vectorB->datos[i] = asignarValor(*vectorB,  i,  b2);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          Vector
+exercises.c:92:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+Compilation failed
+1b1f391
