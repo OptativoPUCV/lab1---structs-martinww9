@@ -878,3 +878,17 @@ Sat 18 Mar 2023 06:43:44 PM UTC:
  tests:  7|1
 total_score: 60/70
 f621fec
+Sat 18 Mar 2023 06:45:05 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:134:14: error: void value not ignored as it ought to be
+  134 |   int suma = sumaV(vectorA, vectorB, c);
+      |              ^~~~~
+exercises.c:134:7: error: unused variable ‘suma’ [-Werror=unused-variable]
+  134 |   int suma = sumaV(vectorA, vectorB, c);
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ea40548
