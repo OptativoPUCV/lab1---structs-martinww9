@@ -556,3 +556,61 @@ Fri 17 Mar 2023 10:18:04 PM UTC:
  tests:  8|0
 total_score: 70/70
 1ac6d08
+Sat 18 Mar 2023 06:37:24 PM UTC: 
+ exercises.c | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:122:3: error: ‘vectorA’ undeclared (first use in this function); did you mean ‘Vector’?
+  122 |   vectorA = crearVector(int 2);
+      |   ^~~~~~~
+      |   Vector
+exercises.c:122:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:122:25: error: expected expression before ‘int’
+  122 |   vectorA = crearVector(int 2);
+      |                         ^~~
+exercises.c:123:3: error: ‘vectorB’ undeclared (first use in this function); did you mean ‘Vector’?
+  123 |   vectorB = crearVector(int 2);
+      |   ^~~~~~~
+      |   Vector
+exercises.c:123:25: error: expected expression before ‘int’
+  123 |   vectorB = crearVector(int 2);
+      |                         ^~~
+exercises.c:126:50: error: expected expression before ‘int’
+  126 |       vectorA->datos[i] = asignarValor(*vectorA, int i, int a1);
+      |                                                  ^~~
+exercises.c:126:27: error: too few arguments to function ‘asignarValor’
+  126 |       vectorA->datos[i] = asignarValor(*vectorA, int i, int a1);
+      |                           ^~~~~~~~~~~~
+exercises.c:92:6: note: declared here
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+exercises.c:127:50: error: expected expression before ‘int’
+  127 |       vectorB->datos[i] = asignarValor(*vectorB, int i, int b1);
+      |                                                  ^~~
+exercises.c:127:27: error: too few arguments to function ‘asignarValor’
+  127 |       vectorB->datos[i] = asignarValor(*vectorB, int i, int b1);
+      |                           ^~~~~~~~~~~~
+exercises.c:92:6: note: declared here
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+exercises.c:129:52: error: expected expression before ‘int’
+  129 |         vectorA->datos[i] = asignarValor(*vectorA, int i, int a2);
+      |                                                    ^~~
+exercises.c:129:29: error: too few arguments to function ‘asignarValor’
+  129 |         vectorA->datos[i] = asignarValor(*vectorA, int i, int a2);
+      |                             ^~~~~~~~~~~~
+exercises.c:92:6: note: declared here
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+exercises.c:130:52: error: expected expression before ‘int’
+  130 |         vectorB->datos[i] = asignarValor(*vectorB, int i, int b2);
+      |                                                    ^~~
+exercises.c:130:29: error: too few arguments to function ‘asignarValor’
+  130 |         vectorB->datos[i] = asignarValor(*vectorB, int i, int b2);
+      |                             ^~~~~~~~~~~~
+exercises.c:92:6: note: declared here
+   92 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+Compilation failed
+ef32b48
