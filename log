@@ -892,3 +892,9 @@ exercises.c:134:7: error: unused variable ‘suma’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ea40548
+Sat 18 Mar 2023 06:45:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+a44df70
